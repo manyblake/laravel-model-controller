@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #dee;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 100px 0;
+
+    ul {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 60px;
+
+        li {
+            p {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid currentColor;
+                padding: 10px;
+                border-radius: 4px;
+                min-height: 80px;
+                text-align: center;
+            }
+
+            p + p {
+                margin-top: 10px;
+            }
+        }
+    }
+}
